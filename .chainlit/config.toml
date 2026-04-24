@@ -1,0 +1,68 @@
+[project]
+# Whether to enable telemetry (default: true). No personal data is collected.
+# Set to false if you prefer no usage analytics.
+enable_telemetry = false
+
+# List of environment variables to be provided by each user to use the app.
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+session_timeout = 3600
+
+# Enable third parties caching (e.g LangChain cache)
+cache = false
+
+[features]
+# Show the prompt playground
+prompt_playground = true
+
+# Authorize users to upload files with messages
+multi_modal = true
+
+# Allows user to use speech to text
+[features.speech_to_text]
+    enabled = false
+    # language = "en-US"
+
+[UI]
+# Name of the app and chatbot.
+name = "RAGenix"
+
+# Show the readme while the conversation is empty.
+show_readme_as_default = true
+
+# Description of the app and chatbot.
+description = "Advanced RAG Agent — chat with your PDF documents using hybrid search and AI."
+
+# Large size content are by default collapsed for a cleaner UI
+default_collapse_content = true
+
+# The default value for the expand messages settings.
+default_expand_messages = false
+
+# Hide the chain of thought details from the user in the UI.
+hide_cot = false
+
+# Link to your GitHub repo.
+# github = "https://github.com/your-org/RAGenix"
+
+[UI.theme.light]
+    background = "#F8FAFC"
+    paper = "#FFFFFF"
+
+    [UI.theme.light.primary]
+        main = "#4F46E5"
+        dark = "#3730A3"
+        light = "#E0E7FF"
+
+[UI.theme.dark]
+    background = "#0F172A"
+    paper = "#1E293B"
+
+    [UI.theme.dark.primary]
+        main = "#818CF8"
+        dark = "#4F46E5"
+        light = "#312E81"
+
+[meta]
+generated_by = "0.7.604"
