@@ -1,0 +1,49 @@
+# RAGenix — .gitignore
+
+# ── Credentials & Secrets ─────────────────────────────
+.env
+*.yaml
+*.yml
+cadentials.*
+credentials.*
+secrets.*
+
+# ── Python ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+*.whl
+
+# ── Virtual environments ───────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Data & Uploads ────────────────────────────────────
+data/
+*.pdf
+*.csv
+*.html
+
+# ── Chainlit runtime ──────────────────────────────────
+.chainlit/.langchain.db
+
+# ── IDEs & OS ─────────────────────────────────────────
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── Testing & Coverage ────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
