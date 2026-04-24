@@ -1,0 +1,37 @@
+# RAGenix — Python Dependencies
+# Install with: pip install -r requirements.txt
+# Tested on Python 3.9+
+
+# Core framework
+chainlit==0.7.604
+
+# LangChain ecosystem
+langchain==0.0.340
+langchain-community==0.0.1
+
+# Vector store
+qdrant-client==1.7.0
+
+# Embeddings
+sentence-transformers==2.2.2
+
+# LLM providers
+openai==0.28.1          # Azure OpenAI (legacy SDK — matches LangChain 0.0.x)
+cohere==4.37
+
+# PDF parsing
+PyPDF2==3.0.1
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# Utilities
+pyyaml==6.0.1
+torch>=2.0.0            # For GPU-accelerated embeddings (CPU fallback works too)
+rank-bm25==0.2.2        # BM25 lexical retriever
+
+# Optional: for development / testing
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
+# black==23.11.0
+# ruff==0.1.6
