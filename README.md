@@ -74,7 +74,7 @@ User Upload (PDF)
 ### 1. Clone & Install
 
 ```bash
-git clone https://github.com/your-org/RAGenix.git
+git clone https://github.com/PRATHAM777P/RAGenix.git
 cd RAGenix
 pip install -r requirements.txt
 ```
